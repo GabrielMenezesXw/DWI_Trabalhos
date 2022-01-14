@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Personagem</title>
+</head>
+
+<body>
+  <form action="https://api-dwi.herokuapp.com/api/examples" method="post">
+    <h1 class="titulo">
+      Total War: Warhammer
+    </h1>
+    <div>
+      <img src="jeu-steam-total-war-warhammer-dark-gods-edition-cover.jpg" alt="Warhammer.jpg">
+    </div>
+    <div>
+
+      <div>
+
+        <div>
+
+          <h2>Valores de habilidade</h2>
+
+          <br>
+
+          <table>
+            <tr>
+              <th>Habilidade</th>
+              <th>Valor</th>
+              <th>Modificador</th>
+            </tr>
+            <tr>
+              <td>Força</td>
+              <td><input type="number" value="10" id="For" onchange="modificador()"></td>
+              <td><input type="number" value="0" id="forMod"></td>
+            </tr>
+            <tr>
+              <td>Dextreza</td>
+              <td><input type="number" value="10" id="Dex" onchange="modificador()"></td>
+              <td><input type="number" value="0" id="dexMod"></td>
+            </tr>
+            <tr>
+              <td>Vitalidade</td>
+              <td><input type="number" value="10" id="Vit" onchange="modificador()"></td>
+              <td><input type="number" value="0" id="vitMod"></td>
+            </tr>
+            <tr>
+              <td>Inteligencia</td>
+              <td><input type="number" value="10" id="Int" onchange="modificador()"></td>
+              <td><input type="number" value="0" id="intMod"></td>
+            </tr>
+            <tr>
+              <td>Carisma</td>
+              <td><input type="number" value="10" id="Car" onchange="modificador()"></td>
+              <td><input type="number" value="0" id="carMod"></td>
+            </tr>
+          </table>
+
+        </div>
+
+        <div>
+
+          <h2>Nível do jogador</h2>
+
+          <br>
+
+          <input type="number" id="NivelJogador" min="1" max="20" value="1" onchange="mudancaLevel();">
+
+        </div>
+
+        <div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <h2>Nome do Personagem</h2>
+    <input type="text" name="nomePersonagem" id="">
+    <h2>Idade</h2>
+    <input type="number" name="idade" id="">
+    <button type="submit">Cadastrar</button>
+  </form>
+</body>
+</html>
+
+<style>
+    img {
+        width: 15%;
+        height: auto;
+
+    }
+</style>
